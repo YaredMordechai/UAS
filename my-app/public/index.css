@@ -28,7 +28,7 @@ background: linear-gradient(90deg, rgba(221,175,255,1) 0%, rgba(166,231,255,1) 3
   cursor: pointer;
 }
 
-.navbar-nav li{
+.navbar-nav li {
   --primary-color: #111;
   --hovered-color: #c84747;
   position: relative;
