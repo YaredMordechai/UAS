@@ -4,11 +4,12 @@
 }
 #navbarSupportedContent{
   float: right;
-  width: 28%;
+
+  width: 33%;
 }
 #kiri{
   float: left;
-  width: 72%;
+  width: 67%;
   display: flex;
   align-items: center;
 }
