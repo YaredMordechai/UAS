@@ -78,3 +78,11 @@ background: linear-gradient(90deg, rgba(23,0,40,1) 0%, rgba(97,9,121,1) 35%, rgb
 #tombol-nav{
 margin-right: 20px;
 }
+#carouselExampleControls{
+  height: 70%;
+  width: 70%;
+  float: center;
+}
+#carousell{
+  display: flex;
+}
