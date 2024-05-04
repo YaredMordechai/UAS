@@ -4,12 +4,11 @@
 }
 #navbarSupportedContent{
   float: right;
-
-  width: 33%;
+  width: 35%;
 }
 #kiri{
   float: left;
-  width: 67%;
+  width: 65%;
   display: flex;
   align-items: center;
 }
@@ -78,14 +77,124 @@ background: linear-gradient(90deg, rgba(23,0,40,1) 0%, rgba(97,9,121,1) 35%, rgb
 #tombol-nav{
 margin-right: 20px;
 }
-#carouselExampleControls{
-  height: 70%;
-  width: 70%;
-  float: center;
-  margin-left: 15%;
+body {
+  font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+  font-style: normal;
 }
-#carousell{
+.welcome {
   width: 100%;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  height: 500px;
+  background-image: url("https://sumbarprov.go.id/images/2018/03/Adi_2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome h1 {
+  color: black;
+  font-weight: 300;
+  font-size: 2rem;
+}
+.product-mac {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+  cursor: pointer;
+}
+.product-mac h2 {
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.container {
+  width: 1070px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+.grid-product {
+  background: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.grid-product:hover {
+  background: #e1e1e1;
+}
+.grid-product img {
+  width: 300px;
+}
+.grid-detail {
+  margin: 20px 0;
+  text-align: center;
+}
+.grid-detail p:last-child {
+  transition: .5s;
+  margin-top: 10px;
+}
+.grid-product:hover > .grid-detail p:last-child {
+  color: #3498db;
+}
+.header2{
+  background-color:#ffffff;
+  text-align:center;
+  margin: 1%;
+  padding: 1px;
+  font-family:"Arial";
+  font-size: 15px;
+  color:#595959;
+}
+
+.header2 a{
+  text-decoration: none;
+  color:#4e94db;
+
+}
+.header2 a:hover{
+   text-decoration: underline;
+}
+.mainbox3 h1{
+  color: black;
+  font-size: 75px;
+  letter-spacing: -.06em;
+}
+
+.mainbox3 p{
+   position: relative;
+   bottom: 38px;
+   font-size: 34px;
+   letter-spacing: .01em;
+   color: rgba(0,0,0,0.8);
+}
+
+.mainbox3 a{
+  font-size: 20px;
+  color:#4e94db;
+  position: relative;
+  bottom: 38px;
+  text-decoration: none;
+  font-family:"Arial";
+  display:block;
+}
+
+.mainbox3 a:hover{
+   text-decoration: underline;
+}
+
+#mainbox3 img {
+    position: relative;
+    bottom: 30px;
+    width:85%;
+    margin: 100%;
 }
