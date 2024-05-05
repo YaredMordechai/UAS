@@ -14,9 +14,10 @@
 }
 #kiri h2{
   margin-left: 10px;
-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 #navbar{
+position: fixed;
+width: 100%;
 background: rgb(221,175,255) !important;
 background: linear-gradient(90deg, rgba(221,175,255,1) 0%, rgba(166,231,255,1) 39%, rgba(63,255,140,1) 100%) !important;
 }
@@ -111,7 +112,7 @@ body {
   margin-bottom: 20px;
 }
 .container {
-  width: 1070px;
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -134,6 +135,7 @@ body {
 }
 .grid-product img {
   width: 300px;
+  margin: 20px;
 }
 .grid-detail {
   margin: 20px 0;
@@ -142,9 +144,6 @@ body {
 .grid-detail p:last-child {
   transition: .5s;
   margin-top: 10px;
-}
-.grid-product:hover > .grid-detail p:last-child {
-  color: #3498db;
 }
 .header2{
   background-color:#ffffff;
@@ -171,7 +170,6 @@ body {
 }
 
 .mainbox3 p{
-   position: relative;
    bottom: 38px;
    font-size: 34px;
    letter-spacing: .01em;
@@ -181,7 +179,6 @@ body {
 .mainbox3 a{
   font-size: 20px;
   color:#4e94db;
-  position: relative;
   bottom: 38px;
   text-decoration: none;
   font-family:"Arial";
@@ -193,7 +190,6 @@ body {
 }
 
 #mainbox3 img {
-    position: relative;
     bottom: 30px;
     width:85%;
     margin: 100%;

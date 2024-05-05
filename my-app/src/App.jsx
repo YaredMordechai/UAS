@@ -1,15 +1,8 @@
-import { Text } from "@chakra-ui/react";
-
 function App() {
   return (
-    <Text
-  bgGradient='linear(to-l, #7928CA, #FF0080)'
-  bgClip='text'
-  fontSize='6xl'
-  fontWeight='extrabold'
->
-  Welcome to Sumatera Barat Website
-</Text>
+    <section className="welcome">
+  <h1>Oh. So. Beauty.</h1>
+</section>
   );
 }
 
