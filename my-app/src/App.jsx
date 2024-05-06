@@ -1,8 +1,8 @@
 function App() {
   return (
-    <section className="welcome">
-  <h1>Oh. So. Beauty.</h1>
-</section>
+    <section className="atas1">
+      <h1>Oh. So. Pretty.</h1>
+    </section>
   );
 }
 
