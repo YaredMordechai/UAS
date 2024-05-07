@@ -1,9 +1,9 @@
 function App() {
-    return (
-      <section className="welcome">
-    <h1>Oh. So. Beauty.</h1>
-  </section>
-    );
-  }
-  
-  export default App;
+  return (
+    <section className="atas1">
+      <h1>Oh. So. Pretty.</h1>
+    </section>
+  );
+}
+
+export default App;
