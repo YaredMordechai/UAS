@@ -5,7 +5,7 @@ function App1() {
       <br />
       <p> The Best Culinary Places.</p>
       <br />
-      <a href="#"> Explore more {">"} </a>
+      <a href="Kuliner.html"> Explore more {">"} </a>
       <img src="gambar/rendang.png" />
     </div>
   );
