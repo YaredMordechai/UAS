@@ -148,10 +148,9 @@ body {
   text-decoration: underline;
 }
 
-#atas2 img {
-  bottom: 30px;
-  width: 85%;
-  margin: 100%;
+#gambar {
+  width: 60%;
+  height: 60%;
 }
 
 .video-container iframe {
