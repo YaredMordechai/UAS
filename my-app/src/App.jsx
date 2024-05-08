@@ -1,11 +1,6 @@
 function App() {
   return (
-    <section
-      className="atas1"
-      data-aos="zoom-in"
-      data-aos-duration="2000"
-      data-aos-delay="200"
-    >
+    <section className="atas1">
       <h1>Oh. So. Pretty.</h1>
     </section>
   );
