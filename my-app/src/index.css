@@ -117,7 +117,6 @@ body {
 
 .atas2 {
   background-color: #ffffff;
-  margin-top: 3%;
   text-align: center;
   font-family: "Arial";
   font-size: 15px;
@@ -163,8 +162,8 @@ body {
 }
 .kerinci img {
   margin-bottom: 40px;
-  width: 60%;
-  height: 60%;
+  width: 70%;
+  height: 70%;
 }
 
 #gambar {
@@ -278,4 +277,45 @@ footer {
 }
 .footer-copyright ul li a:hover {
   text-decoration: underline;
+}
+
+.mainbox6{
+  display: inline-block;
+  background-color :#de2127;
+  font-family: "Arial";
+  text-align: center;
+  width: 100%;
+}
+
+.mainbox6 img{
+  width:15%;
+  height:15%;
+}
+
+.mainbox6 h1{
+  color: black;
+  font-size: 75px;
+  letter-spacing: -.06em;
+}
+
+.mainbox6 p{
+   position: relative;
+   bottom: 38px;
+   font-size: 34px;
+   letter-spacing: .01em;
+   color: rgba(0,0,0,0.8);
+}
+
+.mainbox6 a{
+  font-size: 20px;
+  color:#4e94db;
+  position: relative;
+  bottom: 38px;
+  text-decoration: none;
+  font-family:"Arial";
+  display : block;
+}
+
+.mainbox6 a:hover{
+   text-decoration: underline;
 }
