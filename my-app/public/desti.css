@@ -272,8 +272,7 @@ footer {
   text-decoration: underline;
 }
 
-
-@mixin absCenter {
+@mixin {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -296,7 +295,6 @@ body {
 }
 
 .some-text {
-  @include absCenter;
   max-width: 800px;
   text-align: center;
   font-weight: 500;
@@ -345,14 +343,13 @@ body {
   }
   
   &__content {
-    @include absCenter; // Our mixin to center horizontally and vertically
 
     width: 75%;
     padding: 20px;
     background-color: white;
     box-shadow: 0 2rem 4rem rgba(black, .2);
     border-radius: 10px;
-    overflow: hidden; // This will keep the images sharp corners from protruding past the border-radius
+    overflow: hidden;
 
   }
 
@@ -360,4 +357,12 @@ body {
     font-size: 1.4rem;
     margin-bottom: 4rem;
   }
+}
+
+.video-container iframe {
+  border-radius: 10px;
+}
+
+.video-container h1{
+  font-weight: bold;
 }
