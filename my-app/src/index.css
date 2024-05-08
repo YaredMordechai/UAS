@@ -17,6 +17,10 @@
 }
 #navbar {
   position: fixed;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  z-index: 1;
   width: 100%;
   background: rgb(221, 175, 255) !important;
   background: linear-gradient(
@@ -25,6 +29,9 @@
     rgba(166, 231, 255, 1) 39%,
     rgba(63, 255, 140, 1) 100%
   ) !important;
+}
+#cc{
+  width: 100%;
 }
 .navbar-nav li {
   padding: 0;
@@ -106,19 +113,6 @@ body {
   font-weight: bold;
   color: white;
   font-size: 32px;
-  animation: transisi 1.5s;
-}
-
-@keyframes transisi {
-  0% {
-    transform: translateX(-100px);
-    opacity: 0%;
-  }
-
-  100% {
-    transform: translateX(0px);
-    opacity: 100%;
-  }
 }
 
 .atas2 {
@@ -207,7 +201,6 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
 }
 .footer-main {
   width: 81%;

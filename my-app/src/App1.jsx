@@ -14,7 +14,7 @@ function App1() {
         <Kerinci />
         <p> Your New Vacation Wishlist.</p>
         <br />
-        <a href="#"> Learn more {">"} </a>
+        <a href="#"> Explore more {">"} </a>
         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Gunung_kerinci_-_Jambi.jpg/800px-Gunung_kerinci_-_Jambi.jpg" />
       </div>
     </div>
