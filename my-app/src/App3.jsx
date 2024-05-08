@@ -12,10 +12,7 @@ function merah() {
         <br />
         <p> It Tells Time </p>
         <br />
-        <a href="Destination.html">
-          {" "}
-          Learn more {">"} Buy {">"}{" "}
-        </a>
+        <a href="Destination.html"> Explore more {">"}</a>
       </div>
     </div>
   );
