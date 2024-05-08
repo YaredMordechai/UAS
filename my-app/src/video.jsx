@@ -1,14 +1,9 @@
 function video() {
   return (
-    <div
-      className="container"
-      data-aos="fade-right"
-      data-aos-duration="2000"
-      data-aos-delay="200"
-    >
+    <div className="container" data-aos="fade-right" data-aos-duration="2000" data-aos-delay="200">
       <div className="row">
         <div className="col-sm-6">
-          <div className="video-container">
+          <div className="video-container" >
             <iframe
               width="560"
               height="350"
