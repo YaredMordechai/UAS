@@ -20,6 +20,10 @@
   width: 28%;
 }
 
+hr{
+  border-bottom: 5px solid rgb(0, 0, 0);
+}
+
 #navbar {
   position: relative;
   background: rgb(221, 175, 255) !important;
@@ -128,7 +132,7 @@
 .card {
   max-width: calc(40%); /* Limit maximum card width */
   border-radius: 0.5rem;
-  background-color: #fff;
+  background-color: #b31b1b;
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   border: 1px solid transparent;
   display: flex; /* Make card contents horizontal */
@@ -167,13 +171,16 @@
   background-color: #2563EB;
   padding: 4px 8px;
   border-radius: 4px;
+  color: white;
 }
 
 .action span {
   transition:.3s ease;
+  color: #ffffff;
 }
 
 .action:hover span {
   transform: translateX(4px);
+  color: white;
 }
 
