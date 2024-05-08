@@ -12,7 +12,6 @@ function istana() {
         })
         .catch(error => console.error('Error:', error));
     }, []); // Menggunakan array kosong sebagai dependencies untuk memastikan useEffect hanya dipanggil sekali saat komponen dimuat
-
     return (
         <p className="card__title">{mountKerinciTitle}</p>
     );
