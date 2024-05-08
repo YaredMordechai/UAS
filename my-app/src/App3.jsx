@@ -1,4 +1,4 @@
-function merah() {
+function App3() {
   return (
     <div className="atas2">
       <div
@@ -18,4 +18,4 @@ function merah() {
   );
 }
 
-export default merah;
+export default App3;
