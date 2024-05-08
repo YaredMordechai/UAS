@@ -9,7 +9,7 @@ function app2() {
           <Kerinci />
           <p> Your New Vacation Wishlist.</p>
           <br />
-          <a href="#"> Explore more {">"} </a>
+          <a href="Destination.html"> Explore more {">"} </a>
           <img
             src="gambar/kerinci.png
         "

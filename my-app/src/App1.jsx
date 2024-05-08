@@ -9,7 +9,7 @@ function App1() {
       <Axios />
       <p> The Best Food in The World. </p>
       <br />
-      <a href="#"> Explore more {">"} </a>
+      <a href="Kuliner.html"> Explore more {">"} </a>
       <img id="gambar" src="gambar/rendang.png" />
       </div>
     </div>
