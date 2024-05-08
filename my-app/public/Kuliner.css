@@ -1,3 +1,4 @@
+
 #navbar img {
   width: 50px;
   height: 50px;
@@ -28,11 +29,13 @@
   ) !important;
 }
 .navbar-nav li {
+
   padding: 0;
   margin: 0;
   border: none;
   background: none;
   cursor: pointer;
+
 }
 
 .navbar-nav li {
@@ -86,6 +89,7 @@
 .navbar-nav li:hover a::before {
   width: 100%;
 }
+
 #tombol-nav {
   margin-right: 20px;
 }
