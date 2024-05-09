@@ -194,7 +194,7 @@ body {
   margin-top: 50px;
 }
 footer {
-  width: 100%;
+  width: 100% !important;
   height: 320px;
   background: #f1f1f1;
   display: flex;
@@ -272,12 +272,6 @@ footer {
   width: auto;
 }
 
-.footer-copyright ul li a {
-  color: #7f8c8d;
-}
-.footer-copyright ul li a:hover {
-  text-decoration: underline;
-}
 
 .mainbox6{
   display: inline-block;
