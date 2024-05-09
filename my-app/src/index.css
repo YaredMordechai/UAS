@@ -21,7 +21,7 @@
   align-items: center;
   overflow: hidden;
   z-index: 1;
-  width: 100%;
+  width: 100% !important;
   background: rgb(221, 175, 255) !important;
   background: linear-gradient(
     90deg,
@@ -57,6 +57,10 @@
   position: relative;
   font-size: 20px;
   color: var(--primary-color);
+}
+
+body{
+  width: 100% !important;
 }
 
 .navbar-nav li::after {
@@ -103,7 +107,7 @@ body {
 .atas1 {
   background-image: url("https://sumbarprov.go.id/images/2018/03/Adi_2.jpg");
   background-size: cover;
-  width: 100%;
+  width: 100% !important;
   height: 600px;
   display: flex;
   justify-content: center;
@@ -121,6 +125,8 @@ body {
   font-family: "Arial";
   font-size: 15px;
   color: #595959;
+  width: 100% !important;
+  display: inline-block;
 }
 
 .atas2 a {
@@ -192,6 +198,7 @@ body {
 
 .container {
   margin-top: 50px;
+  width: 100% !important;
 }
 footer {
   width: 100% !important;
