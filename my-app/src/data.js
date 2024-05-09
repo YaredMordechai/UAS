@@ -33,7 +33,7 @@ const data = [
     prgf: "Yum. Yum.",
     halaman: "Kuliner.html",
     idd: "gaada",
-    srcc: "gambar/Kalio.jpg",
+    srcc: "gambar/Kalio.png",
   },
 ];
 export default data;
