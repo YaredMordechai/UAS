@@ -24,7 +24,7 @@ const data = [
     prgf: "Your New Vacation Wishlist.",
     halaman: "Destination.html",
     idd: "gaada",
-    srcc: "gambar/kerinci.png",
+    srcc: "gambar/kerincii.webp",
   },
   {
     aos: "zoom-in",
