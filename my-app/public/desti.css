@@ -22,14 +22,9 @@
   overflow: hidden;
   z-index: 1;
   width: 100%;
-  background: rgb(221, 175, 255) !important;
-  background: linear-gradient(
-    90deg,
-    rgba(221, 175, 255, 1) 0%,
-    rgba(166, 231, 255, 1) 39%,
-    rgba(63, 255, 140, 1) 100%
-  ) !important;
+  background: rgb(0, 0, 0, 0.5) !important;
 }
+
 #cc{
   width: 100%;
 }
@@ -373,4 +368,8 @@ body {
 
 .container {
   margin-top: 50px;
+}
+
+h2{
+  font-weight: bold;
 }
