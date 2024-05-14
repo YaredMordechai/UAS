@@ -15,7 +15,7 @@ function Gadang() {
       .catch((error) => console.error("Error:", error));
   }, []); // Menggunakan array kosong sebagai dependencies untuk memastikan useEffect hanya dipanggil sekali saat komponen dimuat
 
-  return <h1>{mountKerinciTitle}</h1>;
+  return <h1 id="hsatu">{mountKerinciTitle}</h1>;
 }
 
 export default Gadang;

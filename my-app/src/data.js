@@ -14,7 +14,7 @@ const data = [
     class: "gaada",
     prgf: "As Amazing As It Looks",
     halaman: "Destination.html",
-    idd: "gaada",
+    idd: "gambar",
     srcc: "gambar/gb6.jpg",
   },
   {
@@ -23,7 +23,7 @@ const data = [
     class: "kerinci",
     prgf: "Your New Vacation Wishlist.",
     halaman: "Destination.html",
-    idd: "gaada",
+    idd: "gambar",
     srcc: "gambar/kerincii.webp",
   },
   {
@@ -32,7 +32,7 @@ const data = [
     class: "gaada",
     prgf: "Yum. Yum.",
     halaman: "Kuliner.html",
-    idd: "gaada",
+    idd: "gambar",
     srcc: "gambar/Kalio.png",
   },
 ];
