@@ -14,6 +14,7 @@
 }
 #kiri h2 {
   margin-left: 10px;
+  margin-bottom: 0px !important;
   color: black;
   font-weight: 700;
 }

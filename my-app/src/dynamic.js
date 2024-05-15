@@ -2,7 +2,6 @@ import Axios from "./api";
 import Kerinci from "./api-kerinci";
 import data from "./data";
 import Harau from "./api-harau";
-import Kalio from "./api-kalio";
 
 function dynamic() {
   return <div className="atas2">{data.map(createroute)}</div>;
@@ -14,7 +13,6 @@ function createroute(props) {
         <br />
         {props.api === "Axios" ? <Axios /> : null}
         {props.api === "Kerinci" ? <Kerinci /> : null}
-        {props.api === "Kalio" ? <Kalio /> : null}
         {props.api === "Harau" ? <Harau /> : null}
         <p>{props.prgf}</p>
         <br />
