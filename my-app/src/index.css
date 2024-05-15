@@ -25,7 +25,6 @@
   z-index: 1000;
   width: 100% !important;
   background: rgba(255, 255, 255, 0.95);
-  height: 70px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 #cc {
@@ -126,7 +125,6 @@ body {
   background-color: #ffffff;
   text-align: center;
   font-family: "Arial";
-  font-size: 15px;
   color: #595959;
   width: 100% !important;
   display: inline-block;
@@ -134,7 +132,7 @@ body {
 
 .atas2 p {
   bottom: 38px;
-  font-size: 34px;
+  font-size: 170%;
   letter-spacing: 0.01em;
   color: black !important;
 }
@@ -193,7 +191,7 @@ body {
   height: 35%;
 }
 #hsatu {
-  font-size: 450%;
+  font-size: 400%;
   font-weight: 400;
   color: black;
 }
