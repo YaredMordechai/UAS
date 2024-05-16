@@ -98,7 +98,7 @@ function futer() {
                   </a>
                 </li>
                 <li>
-                  <a className="dribbble" href="https://instahgram.com">
+                  <a className="dribbble" href="https://instagram.com">
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>

@@ -61,6 +61,43 @@
   color: var(--primary-color);
 }
 
+.navbar-nav li::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  bottom: -7px;
+  background: rgb(23, 0, 40);
+  background: linear-gradient(
+    90deg,
+    rgba(23, 0, 40, 1) 0%,
+    rgba(97, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  height: 2px;
+  transition: 0.3s ease-out;
+}
+
+.navbar-nav li a::before {
+  position: absolute;
+  width: 0%;
+  inset: 0;
+  color: var(--hovered-color);
+  overflow: hidden;
+  transition: 0.3s ease-out;
+}
+
+.navbar-nav li:hover::after {
+  width: 100%;
+}
+
+.navbar-nav li:hover a::before {
+  width: 100%;
+}
+#tombol-nav {
+  margin-right: 20px;
+}
+
 body {
   width: 100% !important;
 }
@@ -109,159 +146,146 @@ body {
 }
 
 .container-visimisi {
-  margin-top: 70px;
-  margin-bottom: 80px;
-  margin-right: 50px;
+  margin-top: 75px;
+  margin-bottom: 20px;
   width: 100%;
   background-color: #d1e7f7;
 }
 
+.container-visimisis {
+  margin-bottom: 70px;
+  width: 100%;
+  background-color: #d4cbff;
+}
+
 .mision-containers h1 {
-  color: #1e29a8;
-  font-size: 200%;
+  font-family: 'Times New Roman';
+  color: #5e1ea8;
+  font-size: 250%;
   font-weight: bold;
-  letter-spacing: -0.06em;
   text-align: center;
-  margin-top: 4%;
+  margin-top: 10%;
 }
 
 .mision-container p {
   font-size: 100%;
   letter-spacing: 0.01em;
-  text-align: center;
+  text-align: justify;
   color: rgba(0, 0, 0, 0.8);
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
 .vision-container h1 {
+  font-family: 'Times New Roman';
   color: #1e29a8;
-  font-size: 200%;
+  font-size: 250%;
   font-weight: bold;
-  letter-spacing: -0.06em;
   text-align: center;
-  margin-top: 10%;
+  margin-top: 14%;
 }
 
 .vision-containers p {
   font-size: 100%;
-  letter-spacing: 0.01em;
-  text-align: center;
+  text-align: justify;
   color: rgba(0, 0, 0, 0.8);
-  margin-left: 100px;
+  margin-right: 5%;
+  margin-left: 5%;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200,300,400,500,600,700,800,900&display=swap");
 * {
   margin: 0;
   padding: 0;
+  font-family: "Poppins", sans-serif;
 }
 
-section {
+.containerz {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin: 20px 0;
+  margin: 40px 0;
 }
-
-.container .card {
+.containerz .card {
   position: relative;
-  width: 200px;
-  height: 300px;
-  background-color: rgba(21, 21, 21, 0.427);
-  margin: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.413);
-  border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(10px);
-  cursor: pointer;
-}
-
-.container .card .content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  opacity: 0.5;
-  transition: 0.5s;
-}
-
-.container .card:hover .content {
-  opacity: 1;
-  transform: translateY(-20px);
-}
-
-.container .card .content .imgBx {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  border-radius: 100%;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
   overflow: hidden;
-  border: 10px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.container .card .content .imgBx img {
+.containerz .card .content{
   position: absolute;
-  top: 0;
-  left: 0;
+  bottom: -160px;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  flex-direction: column;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  transition: bottom 0.5s;
+  transition-delay: 0.8s;
 }
-
-.container .card .content .contentBx h3 {
-  color: #ffffff;
+.containerz .card:hover .content{
+  bottom: 0px;
+  transition-delay: 0s;
+}
+.containerz .card .content .contentBx h3{
+  color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
-  text-align: center;
-  margin: 20px 0 10px;
   line-height: 1.1em;
+  text-align: center;
+  margin: 5px 0 15px;
+  transition: 0.5s;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition-delay: 0.6s;
 }
-
-.contaner .card .content .contentBx h3 span {
-  font-size: 13px;
+.containerz .card:hover .content .contentBx h3{
+  opacity: 1;
+  transform: translateY(0px);
+}
+.containerz .card .content .contentBx h3 span{
+  font-size: 14px;
   font-weight: 300;
   text-transform: initial;
 }
-
-.container .card .sci {
-  position: absolute;
-  bottom: 25px;
+.containerz .card .content .sci{
+  font-size: 17px;
+  position: relative;
+  bottom: 10px;
   display: flex;
-  justify-content: center;
 }
-
-.container .card .sci li {
+.containerz .card .content .sci li{
   list-style: none;
-  margin: 0 10px;
+  margin:  12px;
   transform: translateY(40px);
   transition: 0.5s;
   opacity: 0;
-  transition-delay: calc(0.1s * var(--i));
+  transition-delay: calc(0.2s * var(--i));
 }
-
-.container .card:hover .sci li {
+.containerz .card:hover .content .sci li{
   transform: translateY(0px);
   opacity: 1;
 }
 
-.container .card .sci li a {
-  color: #c9bbffde;
-  font-size: 22px;
+.containerz .card .content .sci li a{
+  color: #fff;
 }
+
 
 .containerr {
   margin-top: 50px;
