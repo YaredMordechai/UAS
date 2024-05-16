@@ -102,6 +102,7 @@
       </nav>
     </div>
 
+    <div id="map"></div>
     <div id="root"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -110,6 +111,36 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      let map;
+
+      async function initMap() {
+        const position = { lat: -2.631577754860956, lng: 106.44616126487077 };
+        const { Map } = await google.maps.importLibrary("maps");
+        const { AdvancedMarkerElement } = await google.maps.importLibrary(
+          "marker"
+        );
+        map = new Map(document.getElementById("map"), {
+          zoom: 7,
+          center: position,
+          mapId: "DEMO_MAP_ID",
+        });
+
+        const marker = new AdvancedMarkerElement({
+          map: map,
+          position: position,
+          title: "Lengkuas Island",
+        });
+
+        marker.addListener("click", () => {
+          const url =
+            "https://www.google.com/maps/dir/?api=1&destination=${position.lat},${position.lng}";
+          window.open(url, "_blank");
+        });
+      }
+
+      initMap();
     </script>
     <script>
       var TxtType = function (el, toRotate, period) {
@@ -172,96 +203,4 @@
       };
     </script>
   </body>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-6">
-          <h6>About</h6>
-          <p class="text-justify">
-            Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative to
-            help the upcoming programmers with the code. Scanfcode focuses on
-            providing the most efficient code or snippets as the code wants to
-            be simple. We will help programmers build up concepts in different
-            programming languages that include C, C++, Java, HTML, CSS,
-            Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.
-          </p>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Categories</h6>
-          <ul class="footer-links">
-            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
-            <li>
-              <a href="http://scanfcode.com/category/front-end-development/"
-                >UI Design</a
-              >
-            </li>
-            <li>
-              <a href="http://scanfcode.com/category/back-end-development/"
-                >PHP</a
-              >
-            </li>
-            <li>
-              <a href="http://scanfcode.com/category/java-programming-language/"
-                >Java</a
-              >
-            </li>
-            <li>
-              <a href="http://scanfcode.com/category/android/">Android</a>
-            </li>
-            <li>
-              <a href="http://scanfcode.com/category/templates/">Templates</a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="col-xs-6 col-md-3">
-          <h6>Quick Links</h6>
-          <ul class="footer-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="Destination.html">Destination</a></li>
-            <li><a href="Kuliner.html">Culinary</a></li>
-            <li><a href="aboutus.html">About Us</a></li>
-          </ul>
-        </div>
-      </div>
-      <hr />
-    </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">
-            Copyright &copy; 2024 All Rights Reserved by
-            <a href="index.html">SumBar Explorer</a>.
-          </p>
-        </div>
-
-        <div class="col-md-4 col-sm-6 col-xs-12">
-          <ul class="social-icons">
-            <li>
-              <a class="facebook" href="https://facebook.com"
-                ><i class="fab fa-facebook"></i
-              ></a>
-            </li>
-            <li>
-              <a class="twitter" href="https://twitter.com"
-                ><i class="fab fa-twitter"></i
-              ></a>
-            </li>
-            <li>
-              <a class="dribbble" href="https://instahgram.com"
-                ><i class="fab fa-instagram"></i
-              ></a>
-            </li>
-            <li>
-              <a class="linkedin" href="https://linkedin.com"
-                ><i class="fab fa-linkedin"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </footer>
 </html>
