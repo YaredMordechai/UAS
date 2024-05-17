@@ -129,12 +129,15 @@ body {
 .atas1 {
   background-image: url("https://sumbarprov.go.id/images/2018/03/Adi_2.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   width: 100% !important;
   height: 600px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .atas1 h1 {
   font-weight: 600;
   color: white;

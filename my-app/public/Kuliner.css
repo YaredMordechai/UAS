@@ -125,28 +125,20 @@ body {
   padding: 0;
 }
 
-.carousel-caption {
-  top: 50%;
-}
-
-.carousel-caption h1 {
-  font-size: 60px;
-  font-weight: bold;
-}
-
 .atas1 {
-  background-image: url("https://sumbarprov.go.id/images/2018/03/Adi_2.jpg");
+  background-image: url("gambar/carousel.jpeg");
   background-size: cover;
   width: 100% !important;
-  height: 600px;
+  height: 350px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .atas1 h1 {
-  font-weight: bold;
+  font-weight: 600;
   color: white;
-  font-size: 32px;
+  font-size: 300%;
+  padding-top: 7%;
 }
 
 .atas2 {
@@ -308,9 +300,16 @@ body {
   height: 10px;
 }
 .containerbutton {
-  max-width: 800px;
-  margin: 20px auto;
-  padding: 0 20px;
+  color: whitesmoke;
+  background-image: url(gambar/chalkboard.jpg);
+  background-size: cover;
+  border-radius: 15px;
+  width: 80%;
+  margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  padding: 4%;
 }
 
 .containerbutton h1 {
@@ -322,7 +321,10 @@ body {
 }
 
 .contentbutton {
+  color: white;
   line-height: 1.6;
+  border-radius: 15px;
+  padding: 3%;
 }
 
 .contentbutton ol {
