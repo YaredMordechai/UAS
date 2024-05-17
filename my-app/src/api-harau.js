@@ -14,7 +14,7 @@ function Harau() {
     }, []); // Menggunakan array kosong sebagai dependencies untuk memastikan useEffect hanya dipanggil sekali saat komponen dimuat
 
     return (
-        <h1>{mountKerinciTitle}</h1>
+        <h1 id="hsatu">{mountKerinciTitle}</h1>
     );
 }
 
