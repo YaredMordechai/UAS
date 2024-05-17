@@ -15,7 +15,7 @@
 
 #kiri h2 {
   margin-left: 10px;
-  margin-right: 94px; /* Tambahkan margin-right untuk menjauhkan tulisan dari tombol collapse */
+  margin-right: 10px; /* Tambahkan margin-right untuk menjauhkan tulisan dari tombol collapse */
   margin-bottom: 0px !important;
   color: black;
   font-weight: 700;
@@ -33,7 +33,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-#tomnav{
+#tomnav {
   align-items: end;
 }
 
@@ -119,12 +119,11 @@
 }
 
 body {
-  width: 100% !important;
-}
-body {
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
     sans-serif;
   font-style: normal;
+  width: 100% !important;
+  padding: 0;
 }
 .atas1 {
   background-image: url("https://sumbarprov.go.id/images/2018/03/Adi_2.jpg");
@@ -519,6 +518,7 @@ body {
 
 #carousel h1 {
   text-align: center;
+  margin-bottom: 0px;
 }
 
 #pp {

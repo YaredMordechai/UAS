@@ -15,7 +15,7 @@
 
 #kiri h2 {
   margin-left: 10px;
-  margin-right: 94px; /* Tambahkan margin-right untuk menjauhkan tulisan dari tombol collapse */
+  margin-right: 10px; /* Tambahkan margin-right untuk menjauhkan tulisan dari tombol collapse */
   margin-bottom: 0px !important;
   color: black;
   font-weight: 700;
