@@ -1,5 +1,7 @@
 import Tangal from "./api-tanggal";
 import Cuaca from "./api-cuaca";
+import Lucu from "./api-joke";
+import Quote from "./api-quotes";
 
 function futer() {
   return (
@@ -15,6 +17,8 @@ function futer() {
                 rasa kuliner, dan juga keramahan penduduk yang menakjubkan yang
                 menunggu untuk dijelajahi. Temukan pesonanya bersama kami.
               </p>
+              <br />
+              <Quote />
             </div>
 
             <div className="col-xs-6 col-md-3"></div>
@@ -47,8 +51,7 @@ function futer() {
                 <a href="index.html">SumBar Explorer</a>.
                 <Tangal />
                 <Cuaca />
-                <p id="kondisi"></p>
-                <p id="suhu"></p>
+                <Lucu />
               </p>
             </div>
 

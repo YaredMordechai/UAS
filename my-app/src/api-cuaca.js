@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-function WeatherInfo() {
+function Weather() {
   const [weatherData, setWeatherData] = useState(null);
 
   useEffect(() => {
-    const fetchWeatherData = async () => {
+    const fetchData = async () => {
       const options = {
         method: "GET",
         url: "https://yahoo-weather5.p.rapidapi.com/weather",
         params: {
-          location: "jakarta",
+          lat: "-0.7893",
+          long: "100.6496 ",
           format: "json",
-          u: "f",
+          u: "c",
         },
         headers: {
           "X-RapidAPI-Key":
@@ -29,21 +30,20 @@ function WeatherInfo() {
       }
     };
 
-    fetchWeatherData();
+    fetchData();
   }, []);
 
-  return (
-    <div>
-      {weatherData ? (
-        <div>
-          <p>Suhu: {weatherData.current_observation.condition.temperature}°F</p>
-          <p>Cuaca: {weatherData.current_observation.condition.text}</p>
-        </div>
-      ) : (
-        <p>Gagal mengambil data cuaca.</p>
-      )}
-    </div>
-  );
+  function cuaca() {
+    if (!weatherData) return <p id="pp">Gagal Mengambil API Cuaca</p>; // Tunggu hingga data tersedia
+    return (
+      <div>
+        <p id="pp">Suhu: {weatherData.temperature}°C</p>
+        <p id="pp">Cuaca: {weatherData.weather}</p>
+      </div>
+    );
+  }
+
+  return <div>{cuaca()}</div>;
 }
 
-export default WeatherInfo;
+export default Weather;

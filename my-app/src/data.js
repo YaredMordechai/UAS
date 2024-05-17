@@ -7,6 +7,7 @@ const data = [
     halaman: "Kuliner.html",
     idd: "gambar",
     srcc: "gambar/rendang.png",
+    link: "Kuliner.html",
   },
   {
     aos: "zoom-in",
@@ -16,6 +17,7 @@ const data = [
     halaman: "Destination.html",
     idd: "gambar",
     srcc: "gambar/gb6.jpg",
+    link: "Destination.html",
   },
   {
     aos: "zoom-in",
@@ -25,6 +27,7 @@ const data = [
     halaman: "Destination.html",
     idd: "gambar",
     srcc: "gambar/kerincii.webp",
-  }
+    link: "Destination.html",
+  },
 ];
 export default data;
