@@ -102,7 +102,6 @@
       </nav>
     </div>
 
-    <div id="map"></div>
     <div id="root"></div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -112,36 +111,7 @@
     <script>
       AOS.init();
     </script>
-    <script>
-      let map;
-
-      async function initMap() {
-        const position = { lat: -2.631577754860956, lng: 106.44616126487077 };
-        const { Map } = await google.maps.importLibrary("maps");
-        const { AdvancedMarkerElement } = await google.maps.importLibrary(
-          "marker"
-        );
-        map = new Map(document.getElementById("map"), {
-          zoom: 7,
-          center: position,
-          mapId: "DEMO_MAP_ID",
-        });
-
-        const marker = new AdvancedMarkerElement({
-          map: map,
-          position: position,
-          title: "Lengkuas Island",
-        });
-
-        marker.addListener("click", () => {
-          const url =
-            "https://www.google.com/maps/dir/?api=1&destination=${position.lat},${position.lng}";
-          window.open(url, "_blank");
-        });
-      }
-
-      initMap();
-    </script>
+    
     <script>
       var TxtType = function (el, toRotate, period) {
         this.toRotate = toRotate;
