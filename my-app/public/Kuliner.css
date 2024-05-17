@@ -1,32 +1,42 @@
 #navbar img {
   width: 50px;
   height: 50px;
+  padding: auto;
 }
 #navbarSupportedContent {
-  float: right;
-  width: 35%;
+  width: auto; /* Changed to auto for better responsive behavior */
 }
+
 #kiri {
-  float: left;
-  width: 65%;
   display: flex;
   align-items: center;
+  flex-grow: 1;
 }
+
 #kiri h2 {
   margin-left: 10px;
+  margin-right: 94px; /* Tambahkan margin-right untuk menjauhkan tulisan dari tombol collapse */
   margin-bottom: 0px !important;
   color: black;
   font-weight: 700;
+  white-space: nowrap;
 }
+
 #navbar {
   position: fixed;
   display: flex;
   align-items: center;
-  z-index: 1;
-  width: 100% !important;
+  justify-content: space-between;
+  z-index: 1000;
+  width: 100%;
   background: rgba(255, 255, 255, 0.95);
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
+
+#tomnav{
+  align-items: end;
+}
+
 #cc {
   width: 100%;
 }
@@ -92,7 +102,20 @@
   width: 100%;
 }
 #tombol-nav {
-  margin-right: 20px;
+  margin-left: auto; /* Ensure button stays on the right */
+}
+
+/* Media Query for Responsive Design */
+@media (max-width: 992px) {
+  #kiri {
+    width: auto;
+    justify-content: space-between;
+    flex-grow: 1;
+  }
+  #navbarSupportedContent {
+    width: 100%;
+    float: none;
+  }
 }
 body {
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,

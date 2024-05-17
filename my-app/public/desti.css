@@ -68,10 +68,6 @@
   color: var(--primary-color);
 }
 
-body {
-  width: 100% !important;
-}
-
 .navbar-nav li::after {
   position: absolute;
   content: "";
@@ -122,6 +118,9 @@ body {
   }
 }
 
+body {
+  width: 100% !important;
+}
 
 #peta iframe {
   border-radius: 10px;
