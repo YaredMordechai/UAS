@@ -22,7 +22,7 @@ function futer() {
 
             <div className="col-xs-6 col-md-3"></div>
 
-            <div className="col-xs-6 col-md-3" id="fout">
+            <div className="col-xs-6 col-md-3" id="kecilin">
               <div className="cihuy">
               <h6>Quick Links</h6>
               </div>

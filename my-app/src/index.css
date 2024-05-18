@@ -300,9 +300,6 @@ body {
   text-align: end;
 }
 
-#fout {
-  margin: 0 auto;
-}
 .site-footer .social-icons a {
   width: 40px;
   height: 40px;
@@ -433,6 +430,20 @@ body {
   }
 }
 
+#kecilin h6 {
+  margin-left: 65px;
+}
+#kecilin a {
+  margin-left: 65px;
+}
+@media (max-width: 767px){
+  #kecilin h6{
+    margin-left: 20px;
+  }
+  #kecilin a{
+    margin-left: 0px;
+  }
+}
 .mainbox6 {
   display: inline-block;
   background-color: #b5b4b4;
