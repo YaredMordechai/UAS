@@ -371,8 +371,9 @@ ol {
   padding-left: 0;
   list-style: none;
 }
-.footer-links li {
-  display: block;
+  .footer-links li {
+    display: block;
+    margin-left: 10px auto ;
 }
 .footer-links a {
   color: #737373;
@@ -494,7 +495,7 @@ ol {
     margin-right: 20px;
   }
   .footer-links {
-    display: flex;
+    display: block;
     gap: 5px;
   }
 }
