@@ -318,6 +318,16 @@ body {
     text-align: center;
   }
 }
+@media (max-width: 767px){
+  .text-justify {
+    text-align: justify;
+    padding: 0;
+    margin-bottom: 10px; 
+       padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 0px !important;
+  }
+}
 .social-icons {
   padding-left: 0;
   margin-bottom: 0;
