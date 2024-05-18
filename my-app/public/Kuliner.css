@@ -33,7 +33,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-#tomnav{
+#tomnav {
   align-items: end;
 }
 
@@ -330,7 +330,8 @@ body {
   padding-left: 20px;
 }
 
-.contentbutton p, ol {
+.contentbutton p,
+ol {
   margin-bottom: 20px;
 }
 
@@ -469,10 +470,34 @@ body {
 .social-icons a.dribbble:hover {
   background-color: #ea4c89;
 }
-@media (max-width: 767px) {
+@media (max-width: 992px) {
   .social-icons li.title {
     display: block;
     margin-right: 0;
     font-weight: 600;
   }
+}
+
+#kecilin {
+  width: 15%;
+  margin-left: 31.5%;
+}
+
+@media (max-width: 992px) {
+  #kecilin {
+    margin-left: 0px;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .row {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .footer-links {
+    display: flex;
+    gap: 5px;
+  }
+}
+.row {
+  text-align: justify;
 }
