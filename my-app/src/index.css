@@ -109,7 +109,6 @@
 @media (max-width: 992px) {
   #kiri {
     width: auto;
-    justify-content: space-between;
     flex-grow: 1;
   }
   #navbarSupportedContent {
@@ -523,4 +522,33 @@ body {
 
 #pp {
   margin-bottom: 1% !important;
+}
+
+.weather-container h1 {
+  color: black;
+  font-size: 250%;
+  font-weight: 300;
+  letter-spacing: -0.06em;
+  text-align: left;
+}
+.weather-container p {
+  font-size: 100%;
+  letter-spacing: 0.01em;
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
+}
+.weather-container {
+  margin-bottom: 50px;
+}
+
+.weather-container iframe {
+  width: 100%;
+  height: 300px;
+}
+
+@media (max-width: 767px) {
+  .weather-container h1,
+  .weather-container p {
+    text-align: center;
+  }
 }

@@ -1,5 +1,4 @@
 import Tangal from "./api-tanggal";
-import Cuaca from "./api-cuaca";
 import Lucu from "./api-joke";
 import Quote from "./api-quotes";
 
@@ -50,7 +49,6 @@ function futer() {
                 Copyright &copy; 2024 All Rights Reserved by
                 <a href="index.html">SumBar Explorer</a>.
                 <Tangal />
-                <Cuaca />
                 <Lucu />
               </p>
             </div>

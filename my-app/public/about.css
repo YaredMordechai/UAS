@@ -15,7 +15,7 @@
 
 #kiri h2 {
   margin-left: 10px;
-  margin-right: 10px; /* Tambahkan margin-right untuk menjauhkan tulisan dari tombol collapse */
+  margin-right: 20px; /* Tambahkan margin-right untuk menjauhkan tulisan dari tombol collapse */
   margin-bottom: 0px !important;
   color: black;
   font-weight: 700;
@@ -33,7 +33,7 @@
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-#tomnav{
+#tomnav {
   align-items: end;
 }
 
@@ -109,7 +109,6 @@
 @media (max-width: 992px) {
   #kiri {
     width: auto;
-    justify-content: space-between;
     flex-grow: 1;
   }
   #navbarSupportedContent {
@@ -119,7 +118,7 @@
 }
 body {
   font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
-  sans-serif;
+    sans-serif;
   font-style: normal;
   width: 100% !important;
   padding: 0;
@@ -139,7 +138,7 @@ body {
 }
 
 .mision-containers h1 {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   color: #5e1ea8;
   font-size: 250%;
   font-weight: bold;
@@ -156,7 +155,7 @@ body {
 }
 
 .vision-container h1 {
-  font-family: 'Times New Roman';
+  font-family: "Times New Roman";
   color: #1e29a8;
   font-size: 250%;
   font-weight: bold;
@@ -197,7 +196,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.containerz .card .content{
+.containerz .card .content {
   position: absolute;
   bottom: -160px;
   width: 100%;
@@ -208,16 +207,16 @@ body {
   z-index: 10;
   flex-direction: column;
   backdrop-filter: blur(10px);
-  box-shadow: 0 -10px 10px rgba(0,0,0,0.1);
-  border: 1px solid rgba(255,255,255,0.2);
+  box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: bottom 0.5s;
   transition-delay: 0.8s;
 }
-.containerz .card:hover .content{
+.containerz .card:hover .content {
   bottom: 0px;
   transition-delay: 0s;
 }
-.containerz .card .content .contentBx h3{
+.containerz .card .content .contentBx h3 {
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -231,38 +230,37 @@ body {
   transform: translateY(-20px);
   transition-delay: 0.6s;
 }
-.containerz .card:hover .content .contentBx h3{
+.containerz .card:hover .content .contentBx h3 {
   opacity: 1;
   transform: translateY(0px);
 }
-.containerz .card .content .contentBx h3 span{
+.containerz .card .content .contentBx h3 span {
   font-size: 14px;
   font-weight: 300;
   text-transform: initial;
 }
-.containerz .card .content .sci{
+.containerz .card .content .sci {
   font-size: 17px;
   position: relative;
   bottom: 10px;
   display: flex;
 }
-.containerz .card .content .sci li{
+.containerz .card .content .sci li {
   list-style: none;
-  margin:  12px;
+  margin: 12px;
   transform: translateY(40px);
   transition: 0.5s;
   opacity: 0;
   transition-delay: calc(0.2s * var(--i));
 }
-.containerz .card:hover .content .sci li{
+.containerz .card:hover .content .sci li {
   transform: translateY(0px);
   opacity: 1;
 }
 
-.containerz .card .content .sci li a{
+.containerz .card .content .sci li a {
   color: #fff;
 }
-
 
 .containerr {
   margin-top: 50px;

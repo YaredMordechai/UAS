@@ -6,6 +6,7 @@ import Video from "./video";
 import Dynamic from "./dynamic";
 import Foooter from "./footer";
 import Caro from "./carou";
+import Cuac from './cuaca'
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);
 root.render(
@@ -15,6 +16,7 @@ root.render(
     <Dynamic />
 
     <Caro />
+    <Cuac />
     <Foooter />
   </React.StrictMode>
 );

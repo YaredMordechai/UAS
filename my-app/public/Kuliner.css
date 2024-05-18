@@ -109,7 +109,6 @@
 @media (max-width: 992px) {
   #kiri {
     width: auto;
-    justify-content: space-between;
     flex-grow: 1;
   }
   #navbarSupportedContent {
