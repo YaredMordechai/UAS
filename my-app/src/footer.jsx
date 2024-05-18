@@ -22,8 +22,10 @@ function futer() {
 
             <div className="col-xs-6 col-md-3"></div>
 
-            <div className="col-xs-6 col-md-3">
+            <div className="col-xs-6 col-md-3" id="fout">
+              <div className="cihuy">
               <h6>Quick Links</h6>
+              </div>
               <ul className="footer-links">
                 <li>
                   <a href="index.html">Home</a>

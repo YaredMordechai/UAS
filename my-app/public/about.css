@@ -301,8 +301,31 @@ body {
   list-style: none;
 }
 .footer-links li {
+  margin-left: 70px;
   display: block;
 }
+.cihuy{
+  margin-left: 70px;
+}
+@media (max-width:767px) {
+  .text-justify{
+    text-align: justify;
+    padding-right: 10px;
+  }
+}
+@media (max-width:767px) {
+  .footer-links li,
+  .cihuy{
+  margin: 0 auto;
+  }
+}
+
+@media (max-width:767px) {
+  #tuls{
+    margin-bottom: 0px !important;
+  }
+}
+
 .footer-links a {
   color: #737373;
 }
