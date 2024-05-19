@@ -211,6 +211,10 @@ body {
   width: 35%;
   height: 35%;
 }
+#gambar {
+  width: 70%;
+  height: 70%;
+}
 #hsatu {
   font-size: 400%;
   font-weight: 400;
