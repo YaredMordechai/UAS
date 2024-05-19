@@ -58,24 +58,26 @@
       </div>
     </div>
   </div>
+  <br>
+  <hr>
   
 </center>
 <center>
-<div class="some-text">
-  <br>
-  <h2>Musik Sumatera Barat</h2>
-  <a class="button" href="#popup">Musik Sumatera Barat</a>
-</div>
-
-<div class="popup" id="popup">
-  <div class="popup__content">
-      <h2 class="heading-secondary">Kampuang Nan Jauh Di Mato</h2>
-      <p class="popup__text">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/aZ5PYjC61Zk?si=_jupAlyOPwDOGL5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      </p>
-      <a href="#" class="button">Tutup</a>
+  <div class="some-text">
+    <h2>Musik Sumatera Barat</h2>
+    <a class="button" href="#popup" id="openPopup">Musik Sumatera Barat</a>
   </div>
-</div>
+<center>
+  <div class="popup" id="popup">
+    <div class="popup__content">
+        <h2 class="heading-secondary">Kampuang Nan Jauh Di Mato</h2>
+        <div class="popup__text">
+            <iframe id="videoIframe" width="560" height="315" src="https://www.youtube.com/embed/aZ5PYjC61Zk?si=_jupAlyOPwDOGL5v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <a href="#" class="button button--close" id="closePopup">Tutup</a>
+    </div>
+  </div>
+</center>
 </center>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
@@ -168,7 +170,7 @@
   <img src="https://cdn0-production-images-kly.akamaized.net/lVQrEmHPaSf_zm0iJ8xpP4j6kfk=/800x450/smart/filters:quality(75):strip_icc():format(webp)/kly-media-production/medias/4053718/original/049921200_1655282001-pexels-ahmad-nawawi-2700573.jpg" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 800px; height: 243px; margin: 0px; width: 400px;" alt="Liburan ke Sumatera Barat, Wajib Kunjungi Air Terjun Lembah Anai - Regional  Liputan6.com" jsname="kn3ccd" aria-hidden="false">
   <div class="card__content">
     <p class="card__title">Air Terjun Lembah Anai</p>
-    <p class="card__description">sebuah air terjun yang terletak di jorong aie mancua nagari Singgalang, X Koto, Kabupaten Tanah Datar, Sumatera Barat. Air terjun setinggi sekira 35 meter ini berada tepat di tepi Jalan Raya Padang-Bukittinggi di kaki Gunung Singgalang</p>
+    <p class="card__description">Sebuah air terjun yang terletak di jorong aie mancua nagari Singgalang, X Koto, Kabupaten Tanah Datar, Sumatera Barat. Air terjun setinggi sekira 35 meter ini berada tepat di tepi Jalan Raya Padang-Bukittinggi di kaki Gunung Singgalang</p>
   </div>
 </div>
 </div>
@@ -257,6 +259,25 @@
     </div>
   </div>
 </footer>
+<script>
+        document.getElementById('openPopup').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.getElementById('popup').style.display = 'flex';
+            document.getElementById('popup').style.opacity = '1';
+            document.getElementById('popup').style.visibility = 'visible';
+        });
 
+        document.getElementById('closePopup').addEventListener('click', function(e) {
+            e.preventDefault();
+            var popup = document.getElementById('popup');
+            popup.style.display = 'none';
+            popup.style.opacity = '0';
+            popup.style.visibility = 'hidden';
+            var iframe = document.getElementById('videoIframe');
+            var iframeSrc = iframe.src;
+            iframe.src = '';
+            iframe.src = iframeSrc;
+        });
+</script>
 </body>
 </html>
