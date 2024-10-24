@@ -7,6 +7,7 @@ export default function Navbar() {
             <img src="gambar/icon.png" className="ms-4" />
           </a>
           <h2>SumBar Explorer</h2>
+          
         </div>
         <button
           className="navbar-toggler"
